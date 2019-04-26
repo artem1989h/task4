@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --primary-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, div, nav, ul, {
+    margin: 0;
+    padding: 0;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2DE5F5;
+    padding: 10px;
+    
+}
+
+header nav .search {
+    max-width: 150px;
+    color: red;
+    border-radius: 0.6em;
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style: none;
+}
+  
+
+
+
+
+
+
+
