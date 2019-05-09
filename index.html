@@ -13,10 +13,10 @@
             <input type="search" class="search" placeholder="Пошук...">
             <ul class="lang">
                 <li>
-                    <p>UK</p>
+                    <button>UK</button>
                 </li>
                 <li>
-                    <p>EN</p>
+                    <button>EN</button>
                 </li>
                 </li>
             </ul>
@@ -26,7 +26,7 @@
         </div>
         <h2 class="rpch-1">Моторвагонне депо Львів</h2>
         <div class="logo">
-            <a href="https://www.uz.gov.ua/en/"><img src="img/uzlogo.jpg" alt="УЗ"></a>
+            <a href="https://www.uz.gov.ua/en/"><img src="img/logo.jpg" alt="УЗ"></a>
         </div>
         <div class="menu">
             <ul>
@@ -37,7 +37,7 @@
                     <a>Структура</a>
                 </li>
                 <li>
-                    <a href="http://railway.lviv.ua/schedule/suburban/">Розклад руху</a>
+                    <a class="list" href="http://railway.lviv.ua/schedule/suburban/">Розклад руху</a>
                 </li>
                 <li>
                     <a>Послуги</a>
@@ -49,9 +49,9 @@
         </div>
     </header>
     <main class="main">
-        <div>
-            <img src="img/diesel.jpg" alt="дизель">
-        </div>
+        <!--<div>-->
+        <!--    <img src="img/diesel.jpg" alt="дизель">-->
+        <!--</div>-->
         <div class="scroll-news">
             <h3>Головні новини</h3>
             <p>Тепер між Дніпром і Перемишлем — пряме залізничне сполучення
@@ -61,29 +61,31 @@
                 розрахований на швидкість руху 160 км/год.</p>
             <p>Локомотивне депо Львів-Захід отримало подяку з передової на сході України.</p>
         </div>
-        <div>
-            <h3>Кращий працівник місяця</h3>
-            <img src="img/thebest.jpg" alt="Кращий працівник">
-        </div>
-        <div class="feedback">
-            <form method="POST" action="https://formspree.io/a.habinskyi@gmail.com">
-                <h3>Звернення</h3>
-                <input type="text" name="yourname" placeholder="Ім’я" required/>
-                <input type="email" name="Email" placeholder="Email" required/>
-                <input type="text" name="phone-number" placeholder="Телефон" required/>
-                <select name="select-theme">
-                    <option>Побажання</option>
-                    <option>Скарга</option>
-                    <option>Сервіс</option>
-                    <option>Графік руху</option>
-                </select>
-                <textarea name="comments">Текст звернення</textarea>
-                <input type="submit" />
-            </form>
-        </div>
+        <section>
+            <div class="bestworker">
+                <h3>Кращий працівник місяця</h3>
+                <img src="img/thebest.jpg" alt="Кращий працівник">
+            </div>
+            <div class="feedback">
+                <form method="POST" action="https://formspree.io/a.habinskyi@gmail.com">
+                    <h3>Звернення</h3>
+                    <input type="text" name="yourname" placeholder="Ім’я" required/>
+                    <input type="email" name="Email" placeholder="Email" required/>
+                    <input type="text" name="phone-number" placeholder="Телефон" required/>
+                    <select name="select-theme">
+                            <option>Побажання</option>
+                            <option>Скарга</option>
+                            <option>Сервіс</option>
+                            <option>Графік руху</option>
+                        </select>
+                    <textarea name="comments">Текст звернення</textarea>
+                    <input type="submit" />
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-         <div>
+         <div class="social">
             <div><a href="https://uk-ua.facebook.com/"><img src="img/facebook.jpg" alt="facebook"></a></div>
             <div><a href="https://www.instagram.com"><img src="img/insta.jpg" alt="insta"></a></div>
             <div><a href="https://www.youtube.com"><img src="img/tube.jpg" alt="youtube"></a></div>

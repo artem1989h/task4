@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :root {
-    --primary-color: black;
+    --primary-color: #C0DFDE;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -10,32 +10,183 @@ body {
     margin: auto;
 }
 
-h1, h2, div, nav, ul, {
+h1,
+h2,
+div,
+nav,
+ul,
+    {
     margin: 0;
     padding: 0;
+
 }
 
-nav, ul {
+h1,
+h2,
+div,
+nav,
+ul,
+a,
+p {
+    color: var(--primary-color);
+}
+
+
+header nav {
+    height: 50px;
+}
+
+header,
+main,
+footer {
+    background-image: url(img/rail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav,
+ul,
+li,
+.lz {
     display: flex;
     justify-content: space-between;
-    background-color: #2DE5F5;
-    padding: 10px;
+    padding-left: 10px;
+    align-items: center;
     
 }
 
+
+
 header nav .search {
-    max-width: 150px;
+    max-width: 200px;
     color: red;
-    border-radius: 0.6em;
+    border-radius: 1em;
     font-size: 0.8rem;
+    height: 30px;
 }
 
 ul {
     list-style: none;
 }
-  
+
+.menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-decoration: none;
+}
+
+.menu ul {
+    width: 980px;
+}
+
+.menu ul li a {
+    border: 1px solid black;
+    border-radius: 8px;
+    border-color: #C0DFDE;
+    padding: 5px 8px 5px 8px;
+    text-decoration: none;
+    color: #C0DFDE;
+}
+
+.list {
+    text-decoration: none;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-news h3 {
+    display: block;
+    padding: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.scroll-news p {
+    display: block;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-top: #C0DFDE 2px solid;
 
 
+}
+
+section {
+    height: 350px;
+}
+
+.bestworker {
+
+    display: flex;
+    margin-right: 20px;
+    float: right;
+}
+
+form {
+    width: 150px;
+    float: right;
+    margin-left: 20px;
+}
+
+.feedback input, textarea {
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    border-width: 1px;
+    border-radius: 1em;
+    text-align: center;
+    height: 30px;
+    list-style-type: none;
+
+
+}
+
+.feedback select {
+    padding: 0;
+    margin: 0;
+    width: 182px;
+    border-width: 1px;
+    border-radius: 1em;
+    text-align: center;
+    height: 30px;
+}
+
+textarea {
+    height: 60px;
+    list-style-type: none;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    margin-left: 40px;
+}
+.social img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    .logo, .rpch-1, .menu {
+        display: flex;
+    }
+} 
 
 
 
