@@ -13,6 +13,7 @@
             <input type="search" class="search" placeholder="Пошук...">
             <div class="weather">
                 <button class="openweather">Погода</button>
+                <button class="fetch-weather">Прогноз</button>
             </div>
             <ul class="lang">
                 <li>
@@ -70,7 +71,7 @@
                 <img src="img/thebest.jpg" alt="Кращий працівник">
             </div>
             <div class="feedback">
-                <form method="POST" action="https://formspree.io/a.habinskyi@gmail.com">
+                <form class="contact-form" method="POST" action="https://formspree.io/a.habinskyi@gmail.com">
                     <h3>Звернення</h3>
                     <input type="text" name="yourname" placeholder="Ім’я" required/>
                     <input type="email" name="Email" placeholder="Email" required/>
@@ -82,7 +83,9 @@
                             <option>Графік руху</option>
                         </select>
                     <textarea name="comments">Текст звернення</textarea>
-                    <input type="submit" />
+                    <input class="send" type="submit" value= "Надіслати"/>
+                    <button class="save-btn">Запам’ятати</button>
+                    <button class="load-btn">Завантажити</button>
                 </form>
             </div>
         </section>
