@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :root {
-    --primary-color: #C0DFDE;
+    --primary-color: #0000ff;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    max-width: 980px;
+    min-width: 380px;
     margin: auto;
 }
 
@@ -23,11 +23,14 @@ ul,
 
 h1,
 h2,
+h3,
 div,
 nav,
 ul,
 a,
-p {
+p,
+div.navbarNav
+{
     color: var(--primary-color);
 }
 
@@ -36,17 +39,17 @@ header nav {
     height: 50px;
 }
 
-/*header,*/
-/*main,*/
-/*footer {*/
-    /*background-image: url(img/rail.jpg);*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-/*}*/
+header,
+main,
+footer {
+    background-color: #cce6ff;
+    background-size: cover;
+    background-position: center;
+}
 
 nav,
-ul,
-li,
+ul.lang,
+li.lang,
 .lz {
     display: flex;
     justify-content: space-between;
@@ -59,11 +62,11 @@ li,
     padding: 0;
 }
 
-.logo {
-    position: relative;
-    float: right;
-    margin-top: -120px;
-}
+/*.logo {*/
+/*    position: relative;*/
+/*    float: right;*/
+/*    margin-top: -120px;*/
+/*}*/
 
 
 
@@ -73,6 +76,19 @@ header nav .search {
     border-radius: 1em;
     font-size: 0.8rem;
     height: 30px;
+}
+
+section.lable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 ul {
@@ -87,20 +103,33 @@ ul {
     align-items: center;
     flex: 1;
     text-decoration: none;
+    color: #0000ff;
 }
 
 .menu ul {
     width: 980px;
 }
 
-.menu ul li a {
-    border: 1px solid black;
+.navbar-nav {
+    border: 1px solid #0000ff;
     border-radius: 8px;
-    border-color: #C0DFDE;
+    border-color: #0000ff;
     padding: 5px 8px 5px 8px;
     text-decoration: none;
-    color: #C0DFDE;
+    background-color: #0000ff;
+   }
+   
+.navbar-dark .navbar-nav .nav-link {
+    color: #cce6ff;
 }
+
+.navbar.bg-dark {
+    background-color: #0000ff !important;
+    border: #cce6ff;
+    color: #0000ff;
+    border-radius: 1em;
+}
+
 
 .list {
     text-decoration: none;
@@ -129,13 +158,22 @@ main {
 
 }
 
-section {
+section.thebest {
     height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .bestworker {
-    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
+
+.modal-content {
+    background-color: white;
+}
+
 
 form {
     width: 150px;
@@ -154,6 +192,12 @@ form {
     list-style-type: none;
 
 
+}
+
+.feedback {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedback select {
@@ -189,10 +233,7 @@ footer {
     height: 50px;
 }
 
-section {
-    display: flex;
-    flex: 1;
-}
+
 
 @media (max-width: 540px) {
     .logo img{
@@ -206,6 +247,30 @@ section {
     }
 } 
 
+.weatherTable {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a6b1bc;
+}
+
+.weatherTableRow {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weatherTableRow * {
+    margin: 0px;
+}
 
 
 
