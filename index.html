@@ -11,7 +11,9 @@
 <body>
     <header>
         <nav>
+            <div>
             <input type="search" class="search" placeholder="Пошук...">
+            </div>
             <div class="weather">
                 <button class="openweather" data-toggle="modal" data-target="#weatherwindow">Погода</button>
                 <button class="fetch-weather">Прогноз</button>
@@ -27,32 +29,15 @@
             </ul>
         </nav>
             <section class="lable">
+                <div class="logo">
+                    <a href="https://www.uz.gov.ua/en/"><img src="img/logo.jpg" alt="УЗ"></a>
+                </div>
                 <div class="lz">
                     <h1>Львівська залізниця</h1>
                 </div>
                     <h2 class="rpch-1">Моторвагонне депо Львів</h2>
-                <div class="logo">
-                    <a href="https://www.uz.gov.ua/en/"><img src="img/logo.jpg" alt="УЗ"></a>
-                </div>
             </section>
         <div class="menu">
-            <!--<ul>-->
-            <!--    <li>-->
-            <!--        <a>Новини</a>-->
-            <!--    </li>-->
-            <!--    <li>-->
-            <!--        <a>Структура</a>-->
-            <!--    </li>-->
-            <!--    <li>-->
-            <!--        <a class="list" href="http://railway.lviv.ua/schedule/suburban/">Розклад руху</a>-->
-            <!--    </li>-->
-            <!--    <li>-->
-            <!--        <a>Послуги</a>-->
-            <!--    </li>-->
-            <!--    <li>-->
-            <!--        <a>Відгуки</a>-->
-            <!--    </li>-->
-            <!--</ul>-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-pad sticky-top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -80,9 +65,6 @@
         </div>
     </header>
     <main class="main">
-        <!--<div>-->
-        <!--    <img src="img/diesel.jpg" alt="дизель">-->
-        <!--</div>-->
         <div class="scroll-news">
             <h3>Головні новини</h3>
             <p>Тепер між Дніпром і Перемишлем — пряме залізничне сполучення
@@ -94,8 +76,8 @@
         </div>
         <section class="thebest">
             <div class="bestworker">
-                <h3>Кращий працівник місяця</h3>
-                <img src="img/thebest.jpg" alt="Кращий працівник">
+                <h3 class="bw-text" >Кращий працівник місяця</h3>
+                <img src="img/thebest.jpg" class="bw-img" alt="Кращий працівник">
             </div>
             <div class="feedback">
                 <form class="contact-form" method="POST" action="https://formspree.io/a.habinskyi@gmail.com">
@@ -109,7 +91,7 @@
                             <option>Сервіс</option>
                             <option>Графік руху</option>
                         </select>
-                    <textarea name="comments" placeholder="none">Текст звернення</textarea>
+                    <textarea name="comments" placeholder="Текст звернення"></textarea>
                     <input class="send" type="submit" value= "Надіслати"/>
                     <button class="save-btn">Запам’ятати</button>
                     <button class="load-btn">Завантажити</button>
@@ -117,8 +99,8 @@
             </div>
         </section>
     </main>
-    <footer>
-         <div class="social">
+    <footer class="social">
+         <div>
             <div><a href="https://uk-ua.facebook.com/"><img src="img/facebook.jpg" alt="facebook"></a></div>
             <div><a href="https://www.instagram.com"><img src="img/insta.jpg" alt="insta"></a></div>
             <div><a href="https://www.youtube.com"><img src="img/tube.jpg" alt="youtube"></a></div>
@@ -133,7 +115,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          
+        <h5 class="modal-title" id="exampleModalLabel">Львів, Україна</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

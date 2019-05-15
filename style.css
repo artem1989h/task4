@@ -6,7 +6,7 @@
 }
 
 body {
-    min-width: 380px;
+    max-width: 980px;
     margin: auto;
 }
 
@@ -47,26 +47,23 @@ footer {
     background-position: center;
 }
 
-nav,
-ul.lang,
-li.lang,
-.lz {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    align-items: center;
-}
-
-.lz, .rpch-1{
-    margin: 20px;
-    padding: 0;
-}
-
-/*.logo {*/
-/*    position: relative;*/
-/*    float: right;*/
-/*    margin-top: -120px;*/
+/*nav,*/
+/*ul.lang,*/
+/*li.lang,*/
+/*.lz {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding-left: 10px;*/
+/*    align-items: center;*/
+   
 /*}*/
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -80,15 +77,19 @@ header nav .search {
 
 section.lable {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 40% 40% 20%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    margin: 20px;
+    padding: 0; 
+    text-align: center;
+    justify-content: center;
 }
+
 
 .logo {
     display: grid;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 ul {
@@ -104,10 +105,16 @@ ul {
     flex: 1;
     text-decoration: none;
     color: #0000ff;
+    
 }
 
 .menu ul {
     width: 980px;
+}
+
+.navbar navbar-expand-lg navbar-dark bg-dark nav-pad sticky-top {
+    max-width: 980px;
+    padding: 0px;
 }
 
 .navbar-nav {
@@ -117,6 +124,7 @@ ul {
     padding: 5px 8px 5px 8px;
     text-decoration: none;
     background-color: #0000ff;
+    width: 950px;
    }
    
 .navbar-dark .navbar-nav .nav-link {
@@ -159,7 +167,7 @@ main {
 }
 
 section.thebest {
-    height: 350px;
+    /*height: 350px;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -170,15 +178,42 @@ section.thebest {
     justify-content: center;
 }
 
-.modal-content {
-    background-color: white;
+.bw-text {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
+.bw-img {
+    display: block;
+    margin: auto;
+}
 
-form {
-    width: 150px;
-    float: right;
-    margin-left: 20px;
+.contact-form {
+    display: grid;
+    align-items: center;
+}
+
+.contact-form h3 {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.send, .save-btn, .load-btn {
+    border-radius: 1em;
+    border-width: 1px;
+    padding: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.modal-content {
+    background-color: white;
 }
 
 .feedback input, textarea {
@@ -215,37 +250,25 @@ textarea {
     list-style-type: none;
 }
 
-footer {
-    margin: 0;
-    padding: 0;
-    display: flex;
+footer.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     text-align: center;
+    font-size: 1rem;
 }
 
-.social {
-    display: flex;
-    justify-content: space-between;
-    flex: 2;
-    margin-left: 40px;
-}
+/*.social {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex: 2;*/
+/*    margin-left: 40px;*/
+/*}*/
 .social img{
     width: 50px;
     height: 50px;
 }
 
-
-
-@media (max-width: 540px) {
-    .logo img{
-        position: relative;
-        width: 100px;
-        height: 50px;
-        float: left;
-        margin-right: 200px;
-        margin-left: 200px;
-        margin-top: -70px;
-    }
-} 
 
 .weatherTable {
     display: grid;
@@ -255,7 +278,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #a6b1bc;
 }
 
 .weatherTableRow {
@@ -270,6 +292,28 @@ footer {
 
 .weatherTableRow * {
     margin: 0px;
+}
+
+.modal-title {
+    color: #0000ff;
+}
+
+.modal-content {
+    background-color: palegreen;
+}
+
+@media (min-width: 380px) {
+    div.logo {
+        margin-top: 30px;
+    }
+} 
+
+@media (max-width: 500px) {
+    section.thebest {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
 
 
